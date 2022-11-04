@@ -5,9 +5,6 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 import { galleryItems } from './gallery-items';
 // Change code below this line
 
-console.dir(galleryItems);
-console.log(SimpleLightbox);
-
 const galleryContainer = document.querySelector('.gallery');
 
 galleryContainer.innerHTML = getGalleryMarkup(galleryItems);
