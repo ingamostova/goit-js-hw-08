@@ -6,7 +6,7 @@ const textarea = document.querySelector('[name="message"]');
 // console.log(form);
 const LOCALSTORAGE_KEY = 'feedback-form-state';
 
-const object = {};
+const object = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)) || {};
 
 form.addEventListener('input', throttle(onFormInput, 500));
 form.addEventListener('submit', onFormSubmit);
